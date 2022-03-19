@@ -4,10 +4,6 @@ var generateBtn = document.querySelector("#generate");
 
 var generatePassword = function() {
 
-var confirmNumber;
-var confirmChar;
-var confirmupperCase;
-var confirmlowerCase;
 
 // Character Arrays
 var numbersChar = ['0', '1', '2', '3', '4', '5', '6', '7','8', '9'];
@@ -19,8 +15,6 @@ var resultArray = [];
 var userArray = [];
 
 
-
-
 //Window alerts/prompts/confirms to collect data
 var passwordLength = prompt("How many charactors would you like your password?");
 if(passwordLength < 8 || passwordLength > 128)  {
@@ -29,31 +23,41 @@ if(passwordLength < 8 || passwordLength > 128)  {
 }  else  {
 
 var Number = confirm("Would you like numbers in your password?");
-var capitol = confirm("Do you want uppercase letters in your password?");
+var capital = confirm("Do you want uppercase letters in your password?");
 var special = confirm("Would you like special charactors in your password?");
 var smallCase = confirm("Would you like lowercase letters in your password?");
 
 }
 
-if (numbersChar)  {
+if (Number === true)  {
   resultArray = resultArray.concat(numbersChar);
 
+} else if (Number === false)  {
+  ""
 }
 
-if (upperCase)  {
+if (capital === true)  {
   resultArray = resultArray.concat(upperCase);
+
+} else if (capital === false)  {
+  ""
 }
 
-if (lowerCase)  {
+if (smallCase === true)  {
   resultArray = resultArray.concat(lowerCase);
+
+} else if (smallCase === false)  {
+  ""
 }
 
-if (specialChar)  {
+if (special === true)  {
   resultArray = resultArray.concat(specialChar);
+} else if (special === false)  {
+  ""
 }
+ {
 
-console.log(resultArray);
-
+}
 
 for (var i = 0; i < passwordLength; i++)  {
 
@@ -62,10 +66,6 @@ for (var i = 0; i < passwordLength; i++)  {
 
 return userArray.join("") ;
 }
-
-
-
-
 
 
 // Write password to the #password input
