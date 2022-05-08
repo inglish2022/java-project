@@ -29,6 +29,10 @@ var smallCase = confirm("Would you like lowercase letters in your password?");
 
 }
 
+if (Number === false && capital === false && special === false && smallCase === false)  {
+  choices = window.alert('YOU MUST CHOOSE AT LEAST ONE CRITERIA!');
+}
+
 if (Number === true)  {
   resultArray = resultArray.concat(numbersChar);
 

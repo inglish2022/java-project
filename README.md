@@ -10,8 +10,8 @@ www.github.com/inglish2022/java-praject
 
 ##  Screenshot
 
-C:\Users\User\Desktop\java-project\Develop\Screenshot (10).png
 
+![AltTextt](./Screenshot.png)
 ## Author
 
 Inglish Foust
