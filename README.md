@@ -6,7 +6,7 @@ PASSWORD GENERATOR
 
 https://github.com/inglish2022/java-project.git
 
-www.github.com/inglish2022/java-praject
+www.github.com/inglish2022/java-project
 
 ##  Screenshot
 
